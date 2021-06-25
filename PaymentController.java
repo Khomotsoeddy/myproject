@@ -13,7 +13,6 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
-import application.SampleController;
 import application.Total;
 
 public class PaymentController extends Total{
@@ -150,7 +149,7 @@ public class PaymentController extends Total{
 	
 	public void goBack(ActionEvent event) throws IOException {
 		
-		Pane root = FXMLLoader.load(getClass().getResource("Sample.fxml"));
+		Pane root = FXMLLoader.load(getClass().getResource("za/ac/tut/buywindow/buyWindowLayout.fxml"));
 		Stage stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
 		Scene scene = new Scene(root,900,900);
 		stage.setScene(scene);
